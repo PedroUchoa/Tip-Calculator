@@ -13,7 +13,7 @@
 <body>
 
   <main>
-    <img src="images/logo.svg" alt="">
+    <img class="logo" src="images/logo.svg" alt="">
     <section class="principal">
       <section class="bill-section">
         <div class="bill">
@@ -39,12 +39,15 @@
               <button>50%</button>
             </li>
             <li>
-              <input type="number" name="custom" id="" placeholder="Custom">
+              <input type="number" name="custom" id="" placeholder="Custom" min="0">
             </li>
           </ul>
-        <div>
-          <label for="number-people">Number of People</label>
-          <input type="number" name="number-people" id="number-people" value="0" min="0">
+        <div class="number-people">
+          <span>
+            <label for="number-people">Number of People</label>
+            <p>can´t be zero</p>
+          </span>
+          <input type="number" name="number-people" id="number-people" placeholder="0" min="0">
         </div>
       </section>
       <section class="tip-section">

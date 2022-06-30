@@ -32,10 +32,16 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
+.logo{
+    position:relative; 
+    left: 46%;
+    top: 2rem;
+}
+
 .principal {
     height: 25rem;
     width: 50rem;
-    margin: 0 auto;
+    margin: 8% auto;
     background-color: var(--White);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,7 +60,7 @@ input[type="number"] {
     color: var(--Dark-grayish-cyan);
 }
 
-.bill input {
+.bill input, .number-people input {
     margin-right: 10px;
     text-align: right;
     width: 330px;
@@ -63,7 +69,7 @@ input[type="number"] {
     background-image: url(../images/icon-dollar.svg);
     background-repeat: no-repeat;
     background-position: 5% 50%;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 5px;
     font-size: 22px;
     font-family: 'Space Mono', monospace;
@@ -72,20 +78,19 @@ input[type="number"] {
     padding: 0 15px;
 }
 
-.bill input::placeholder {
+.bill input::placeholder, .number-people input::placeholder {
     color: var(--Very-dark-cyan);
 }
 
-.bill input:focus {
-    border: 2px solid var(--Strong-cyan);
+.bill input:focus, .number-people input:focus {
     border-radius: 5px;
-    box-shadow: 0 0 0 0;
     outline: none;
+    border: 2px solid var(--Strong-cyan);
 }
 
 
 .select-tip {
-    margin-top: 20px;
+    margin-top: 40px;
 
 }
 
@@ -111,32 +116,59 @@ input[type="number"] {
 
 .select-tip ul li input {
     background-color: var(--Very-light-grayish-cyan);
-    border: none;
-    box-shadow: 0 0 0 0;
-    outline: 0;
     color: var(--Very-dark-cyan);
-    outline: none;
-    padding: 0 15px;
-}
-
-.select-tip ul li input:focus{
     text-align: right;
+    border: 2px solid transparent;
+}
+
+.select-tip ul li input:focus {
     border: 2px solid var(--Strong-cyan);
+    outline: none;
 }
 
-.select-tip ul li button:hover{
+.select-tip ul li button:hover {
     cursor: pointer;
-}
-
-.select-tip ul li .button-active{
-    color: black;
-    background-color: var(--Strong-cyan);
 }
 
 .select-tip ul li input::placeholder {
     color: var(--Dark-grayish-cyan);
     text-align: center;
     font-weight: 700;
+}
+
+.select-tip ul li .button-active {
+    color: black;
+    background-color: var(--Strong-cyan);
+}
+
+.number-people {
+    margin-top: 40px;
+}
+
+.number-people span label {
+    font-size: 13px;
+    color: var(--Dark-grayish-cyan);
+    display: inline;
+}
+
+.number-people span p{
+    color: red;
+    width: 104px;
+    height: 20px;
+    float: right;
+    font-size: 13px;
+    display: none;
+}
+
+.number-people input{
+    display: block;
+    background-image: url(..//images/icon-person.svg);   
+}
+
+.tip-section{
+    background-color: var(--Very-dark-cyan);
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .attribution {
