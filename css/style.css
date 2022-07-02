@@ -174,7 +174,7 @@ input[type="number"] {
 
 .tip-amount{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 100px 1fr;
     justify-content: center;
     height: max-content;
     margin-top: 20px;
