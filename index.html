@@ -24,22 +24,22 @@
           <h1>Select tip %</h1>
           <ul>
             <li>
-              <button class="button-active">5%</button>
+              <button value="5" atualizar>5%</button>
             </li>
             <li>
-              <button>10%</button>
+              <button value="10" atualizar>10%</button>
             </li>
             <li>
-              <button>15%</button>
+              <button value="15" atualizar>15%</button>
             </li>
             <li>
-              <button>25%</button>
+              <button value="25" atualizar>25%</button>
             </li>
             <li>
-              <button>50%</button>
+              <button value="50" atualizar>50%</button>
             </li>
             <li>
-              <input type="number" name="custom" id="" placeholder="Custom" min="0">
+              <input type="number" name="custom" id="input-custom" placeholder="Custom" min="0" button-add atualizar>
             </li>
           </ul>
         <div class="number-people">
@@ -47,15 +47,15 @@
             <label for="number-people">Number of People</label>
             <p>can´t be zero</p>
           </span>
-          <input type="number" name="number-people" id="number-people" placeholder="0" min="0">
+          <input type="number" name="number-people" id="number-people" placeholder="0" min="0" >
         </div>
       </section>
       <section class="tip-section">
-        <div>
+        <div class="tip-amount">
           <h1>Tip Amount <span>/ person</span></h1>
           <p>$0.00</p>
         </div>
-        <div>
+        <div class="tip-amount">
           <h1>Total <span>/ person</span></h1>
           <p>$0.00</p>
         </div>
@@ -68,4 +68,5 @@
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="js/script.js"></script>
 </html>
