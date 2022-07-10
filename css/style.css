@@ -168,7 +168,7 @@ input[type="number"] {
 
 .tip-section{
     background-color: var(--Very-dark-cyan);
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
 }
 
@@ -193,7 +193,7 @@ input[type="number"] {
 }
 
 .tip-amount p{
-    font-size: 40px;
+    font-size: 35px;
     color: var(--Strong-cyan);
     text-align: right;
 }

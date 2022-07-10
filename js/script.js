@@ -38,9 +38,9 @@ function calcularGorjeta() {
     let people = parseFloat(inputPeople.value)
     let gorjeta = ((bill / 100) * value) / people
     let valor = gorjeta + (bill / people)
-    if (!isNaN(valor) && !isNaN(gorjeta) && value != '') {
-        valorTotal.innerHTML = `R$ ${valor.toFixed(2).replace('.', ',')}`
-        valorAmount.innerHTML = `R$ ${gorjeta.toFixed(2).replace('.', ',')}`
+    if (!isNaN(valor) && !isNaN(gorjeta) && value != '' ) {
+        valorTotal.innerHTML = `$ ${valor.toFixed(2).replace('.', ',')}`
+        valorAmount.innerHTML = `$ ${gorjeta.toFixed(2).replace('.', ',')}`
         console.log(value)
     }
 }
